@@ -1,0 +1,300 @@
+/* Set the default styles for desktop and laptop screens */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 241, 241);
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+h3{
+  font-size: 20px;
+  line-height: 50%;
+  font-weight: bold;
+  margin: 10px 0px 0px;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 500;
+  margin: 30px 0 10px 0;
+  color: rgb(162, 0, 255);
+}
+.dark h2 {
+  color:rgb(246, 169, 241);
+}
+
+p {
+  margin: 0px;
+  font-size: 20px;
+}
+
+a {
+  color:rgb(162, 0, 255);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.dark a {
+  color:rgb(246, 169, 241);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+
+.switch {
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(39, 38, 38);
+  position: relative;
+}
+
+.flicker {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow: 
+    inset 4px 4px 4px rgb(255,255,255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+  background-color: rgb(57, 57, 57);
+  transition: 0.3s;
+}
+
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+
+.dark .flicker {
+  transform: translateX(40px);
+}
+
+.dark > * {
+ color:rgb(255, 255, 255);
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+  margin: -5% 0% 0%;
+}
+
+.main-text {
+  width: 50%;
+}
+
+.square {
+  width: 100%;
+  margin: 1%;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.dark .square {
+  background-color: rgb(71, 71, 71);
+}
+
+#itachi{
+  width: 600%;
+}
+
+.sub-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cube {
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 20px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.cube:hover {
+  transform: rotateY(360deg);
+}
+
+#onion {
+  left: 100px;
+  bottom: 80px;
+  background-image: url("onion.png");
+  background-size: cover;
+  background-color: rgb(175, 119, 227);
+  
+}
+
+#onion:before {
+  background-color: rgb(189, 154, 221);
+}
+
+#onion:after {
+  background-color: rgb(205, 188, 221);
+}
+
+#kali {
+  left: 250px;
+  bottom: 240px;
+  background-image: url("kali.png");
+  background-size: cover;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+#kali:before {
+  background-color: rgb(139, 139, 139);
+}
+
+#kali:after {
+  background-color: rgb(197, 197, 197);
+}
+
+#rat {
+  left: 450px;
+  bottom: 200px;
+  background-image: url("rat.png");
+  background-size: cover;
+  background-color: rgb(255, 0, 0);
+ 
+}
+
+#rat:before {
+  background-color: rgb(245, 88, 49);
+}
+
+#rat:after {
+  background-color: rgb(158, 6, 6);
+}
+
+
+#mask {
+  left: 350px;
+  bottom: 40px;
+  background-image: url("mask.png");
+  background-size: cover;
+  background-color: rgb(0, 255, 0);
+ 
+}
+
+#mask::before {
+  background-color: rgb(110, 219, 106);
+}
+
+#mask:after {
+  background-color: rgb(36, 94, 9);
+}
+
+
+.klist ul li
+{
+  list-style: none;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px 30px 10px;
+  background-color:rgb(0, 0, 0);
+}
+
+.dark footer {
+background-color:rgb(28, 28, 28);
+}
+
+.buttons
+{
+    margin: 5% 45% 0%;
+    
+}
+.buttons button
+{
+  border-radius: 80px;
+  background-color: rgb(170, 99, 236);
+  padding: 4px 40px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.buttons button:hover
+{
+    background-color: antiquewhite;
+    color: rgb(162, 0, 255);
+}
+
+@media only screen and (min-width: 970px) {
+  .main-text {
+    width: 60%;
+  }
+
+  .square {
+    width: 100%;
+    margin: 1%;
+    height: 600px;
+  }
+}
+
+/* Apply different styles for screens with max-width of 768px (mobile screens) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    height: 80px;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .main-text {
+    width: 100%;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .cube {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }
+}
